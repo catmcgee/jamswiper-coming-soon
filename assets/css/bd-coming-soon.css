@@ -1,0 +1,80 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #1DB954;
+  color: #ffffff;
+  padding-bottom: 75px;
+  }
+  @media (max-width: 767px) {
+    body {
+      padding-bottom: 30px; } }
+
+@media (max-width: 991px) {
+  .section-left {
+    padding: 24px 40px; } }
+
+.page-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-bottom: 98px; }
+  @media (max-width: 991px) {
+    .page-title {
+      font-size: 35px;
+      margin-top: 0px;
+      margin-bottom: 48px; } }
+  @media (max-width: 767px) {
+    .page-title {
+      font-size: 30px;
+      margin-bottom: 48px; } }
+
+.bd-cd-timer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px; }
+  .bd-cd-timer .time-card {
+    text-align: center; }
+  .bd-cd-timer .time-count {
+    display: block;
+    font-size: 80px;
+    font-weight: bold; }
+    @media (max-width: 991px) {
+      .bd-cd-timer .time-count {
+        font-size: 50px; } }
+    @media (max-width: 767px) {
+      .bd-cd-timer .time-count {
+        font-size: 30px; } }
+  .bd-cd-timer .time-label {
+    display: block;
+    font-size: 15px; }
+    @media (max-width: 767px) {
+      .bd-cd-timer .time-label {
+        font-size: 12px; } }
+
+.footer-social-links {
+  margin-bottom: 25px; }
+  .footer-social-links .social-link {
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 20px;
+    margin-right: 16px;
+    transition: all 0.3s ease-in-out; }
+    .footer-social-links .social-link:last-child {
+      margin-right: 0; }
+    .footer-social-links .social-link:hover {
+      text-decoration: none;
+      background-color: #000000;
+      color: #ffffff; }
+    @media (max-width: 767px) {
+      .footer-social-links .social-link {
+        line-height: 30px;
+        width: 30px;
+        height: 30px;
+        font-size: 14px; } }
+
+/*# sourceMappingURL=bd-coming-soon.css.map */
