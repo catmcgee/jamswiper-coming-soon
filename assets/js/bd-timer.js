@@ -1,4 +1,4 @@
-var endDate = new Date("Aug 10 2020");
+var endDate = new Date("Aug 20 2020");
 
 var x = setInterval(function() {
 
