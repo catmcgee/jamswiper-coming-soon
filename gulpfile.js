@@ -1,20 +1,17 @@
 //Import
 
 const gulp = require('gulp');
-const sass = require('gulp-sass');
-const sourceMaps = require('gulp-sourcemaps');
+const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync');
 
 //SCSS
 
 function style() {
-    return gulp.src('./assets/scss/*.scss')
-    .pipe(sourceMaps.init())
+    return gulp.src('./assets/scss/*.scss', { sourcemaps: true })
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
-    .pipe(sourceMaps.write('./'))
-    .pipe(gulp.dest('./assets/css'))
+    .pipe(gulp.dest('./assets/css', { sourcemaps: './' }))
     .pipe(browserSync.stream());
 }
 
